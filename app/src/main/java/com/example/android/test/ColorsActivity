@@ -1,0 +1,32 @@
+package com.example.android.test;
+
+import android.media.MediaPlayer;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+
+public class ColorsActivity extends AppCompatActivity {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main_page);
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new ColorsFragment()).commit();
+
+
+    }
+
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        Toast.makeText(getApplicationContext(), "App has closed :(", Toast.LENGTH_LONG).show();
+//        releaseMediaPlayer();
+//    }
+}

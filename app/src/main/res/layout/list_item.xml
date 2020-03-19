@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/list_ite_height"
+    android:background="@color/ListPrimary">
+
+        <ImageView
+            android:id="@+id/imgrep"
+            android:layout_width="@dimen/list_ite_height"
+            android:layout_height="@dimen/list_ite_height"
+            android:background="@drawable/image_back"/>
+    <LinearLayout
+        android:id="@+id/itemView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/NumbersPrimary"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/miwokeLang"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/whiteText"
+            tools:text="Lutti"/>
+        <TextView
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/whiteText"
+            tools:text="One"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.test">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/family_father"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PhrasesActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/phrase_name">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".NumbersActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/num_name">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity
+            android:name=".FamilyActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/fam_name">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".ColorsActivity"
+            android:label="@string/color_name" />
+        <activity android:name=".GotoActivity"
+            android:theme="@style/SecondTheme"
+            android:label="GotoActivity"/>
+    </application>
+
+</manifest>
